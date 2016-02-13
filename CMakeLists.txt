@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 project(cdna)
 
 # setup build directory
@@ -16,7 +16,7 @@ include_directories(include)
 set(Boost_USE_STATIC_LIBS off)
 set(Boost_USE_MULTITHREAD on)
 set(Boost_USE_STATIC_RUNTIME off)
-find_package(Boost 1.53 COMPONENTS system thread chrono)
+find_package(Boost 1.55 COMPONENTS system thread chrono)
 if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
